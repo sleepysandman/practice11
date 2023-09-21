@@ -1,0 +1,45 @@
+@charset "utf-8";
+body{
+    background-color: #34495E;
+}
+
+.master{
+    border: 1px solid red;
+    padding: 0.5% 0.5% 0% 0.5% ;
+    display: grid;
+    gap: 12px 12px;
+    grid-template-rows: 60px 300px 1000px 210px;
+    grid-template-areas:
+    "h h h h h h h h h h h h"
+    "i i i s s s s s s s s s"
+    "i i i c c c c c c c c c"
+    "f f f f f f f f f f f f";
+    
+}
+
+.master>div,section{
+    border: 1px solid red;
+    background-color: #ECF0F1;
+    border-radius: 5px;
+}
+
+.header{
+  grid-area: h;
+}
+
+.container1{
+    grid-area: s;
+}
+
+.sidebar{
+    grid-area: i;
+}
+
+.content{
+    grid-area: c;
+}
+
+.footer{
+    grid-area: f;
+}
+
